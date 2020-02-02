@@ -1,0 +1,134 @@
+* basics
+
+| M-x | call interactive function |
+| M-: | eval expression           |
+| M-! | exec shell command        |
+| C-g | quit                      |
+| C-j | newline                   |
+| C-m | return                    |
+
+** help
+
+| C-h k | key      |
+| C-h f | function |
+| C-h v | variable |
+| C-h m | mode     |
+| C-h t | tutorial |
+
+** buffer
+
+| C-x 1   | single buffer |
+| C-x 2   | split below   |
+| C-x 3   | split right   |
+| C-x o   | switch window |
+| C-x C-b | list buffers  |
+| C-x b   | switch buffer |
+| C-x k   | kill buffer   |
+| C-x C-f | find file     |
+| C-x C-s | save buffer   |
+
+*** while finding file
+
+| C-j | create new file |
+| C-m | select          |
+| =/= | into dir        |
+| M-n | next            |
+| M-p | previous        |
+
+* navigation
+
+|   | C        | M        | C-M      |
+|---+----------+----------+----------|
+| a | line min | buff min | sexp min |
+| e | line max | buff max | sexp max |
+| f | char inc | word inc | sexp inc |
+| b | char dec | word dec | sexp dec |
+| n | line inc | sent inc | para inc |
+| p | line dec | sent dec | para dec |
+
+| C-s   | search down |
+| C-r   | search up   |
+| M-g g | goto line   |
+| M-'   | goto ngram  |
+
+* editing
+
+** undo
+
+| C--   | undo |
+| M-_   | redo |
+| C-x u | tree |
+
+** kill
+
+| C-d   | delete char forward  |
+| DEL   | delete char backward |
+| M-d   | delete word forward  |
+| M-DEL | delete word backward |
+| C-k   | kill line/sexp       |
+
+** yank
+
+| C-y   | yank       |
+| M-y   | yank more  |
+| C-M-y | yank popup |
+
+** region
+
+| C-SPC   | mark           |
+| C-x SPC | mark rectangle |
+| M-h     | expand region  |
+| C-x h   | mark buffer    |
+
+*** while region active
+
+| d | delete           |
+| k | kill             |
+| w | copy             |
+|---+------------------|
+| l | lowercase        |
+| u | uppercase        |
+| r | replace          |
+| R | replace regex    |
+|---+------------------|
+| s | sort             |
+| ; | comment          |
+| i | indent           |
+|---+------------------|
+| n | mc per line      |
+| m | mc per match     |
+| M | match with regex |
+
+** multiple-cursor
+
+| C-M-\ | mc mark |
+
+mc/insert-numbers
+mc/vertical-align
+
+** auto-completion
+
+| C-M-i | complete |
+
+*** while inside pop up
+
+| M-n | next        |
+| M-p | previous    |
+| C-h | help        |
+| M-h | help inline |
+
+* misc
+
+** projectile
+
+| C-c p p | find project |
+
+** deadgrep
+
+required ripgrep
+
+| C-M-q |
+
+** magit
+
+| C-x g | magit status |
