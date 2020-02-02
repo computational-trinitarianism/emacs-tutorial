@@ -132,3 +132,11 @@ required ripgrep
 ** magit
 
 | C-x g | magit status |
+
+** python
+
+| C-c C-z | switch to repl |
+| M-RET   | eval line      |
+| C-M-x   | eval block     |
+| C-c M-o | clean repl     |
+|         |                |
